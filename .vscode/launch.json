@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:PrettyPrint}",
+            "name": "Debug pretty-print-cli",
+            "program": "${workspaceFolder:PrettyPrint}/.build/debug/pretty-print-cli",
+            "preLaunchTask": "swift: Build Debug pretty-print-cli"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:PrettyPrint}",
+            "name": "Release pretty-print-cli",
+            "program": "${workspaceFolder:PrettyPrint}/.build/release/pretty-print-cli",
+            "preLaunchTask": "swift: Build Release pretty-print-cli"
+        }
+    ]
+}
