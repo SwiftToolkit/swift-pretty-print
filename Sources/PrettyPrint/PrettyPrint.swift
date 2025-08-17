@@ -1,7 +1,10 @@
 import Foundation
 
-public func prettyPrint(_ value: Any) {
-    print(String(describing: type(of: value)) + ":")
+public func prettyPrint(_ value: Any, includeTypeName: Bool = true) {
+    if includeTypeName {
+        print(String(describing: type(of: value)) + ":")
+    }
+
     print(prettyContent(value, indent: 0))
 }
 
